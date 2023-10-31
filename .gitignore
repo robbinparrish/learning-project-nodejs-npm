@@ -1,0 +1,42 @@
+# Ignore everything.
+/*
+*/*
+
+# Add these files/directories and subdirectories.
+
+# git specific configs.
+!.gitignore
+
+# gitlab ci/cd specific configs.
+!.gitlab-ci.yml
+!README.gitlab-ci.md
+
+# Helper scripts specific configs.
+!helper-scripts
+!helper-scripts/generate_version_id.sh
+!helper-scripts/release_version_id.sh
+!helper-scripts/install-pre-requists.sh
+
+# package manager specific configs.
+!package.json
+!package-lock.json
+
+# Development environment specific configs.
+# Currently only for vscode specific.
+!.vscode
+!.vscode/launch.json
+!.devcontainer
+!.devcontainer/devcontainer.json
+!.devcontainer/Dockerfile
+!.devcontainer/docker-compose.yml
+!.devcontainer/post-create-command.sh
+!.devcontainer/devcontainer-docker-compose.json
+!.devcontainer/devcontainer-docker-compose.yml
+!.devcontainer/README.devcontainer.md
+
+# README.
+!README.md
+
+# Dummy projects directory.
+!projects
+!projects/.gitkeep
